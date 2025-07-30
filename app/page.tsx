@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronDown, Menu } from "lucide-react"
+import { Menu } from "lucide-react"
 import Image from "next/image"
 
 export default function FrostWebsite() {
@@ -244,18 +244,6 @@ export default function FrostWebsite() {
                   />
                 </div>
               ))}
-            </div>
-
-            <div className="text-center animate-pulse">
-              <div className="inline-flex flex-col items-center">
-                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center border-2 sm:border-4 border-black mb-2 transform hover:scale-110 transition-transform duration-300">
-                  <span className="font-bold text-black text-sm sm:text-base">0</span>
-                </div>
-                <p className="text-xs sm:text-sm font-bold text-black mb-2" style={{ fontFamily: "Bungee, cursive" }}>
-                  SCROLL FOR MORE
-                </p>
-                <ChevronDown className="w-4 h-4 sm:w-6 sm:h-6 text-black animate-bounce" />
-              </div>
             </div>
           </div>
         </div>
