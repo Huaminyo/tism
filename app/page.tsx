@@ -147,7 +147,10 @@ export default function FrostWebsite() {
             <Menu className="w-5 h-5 text-black" />
           </button>
 
-          <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-3 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg border-4 border-black shadow-lg transform hover:scale-105 transition-all duration-300">
+          <Button
+            onClick={() => window.open("https://ape.store/base/0x1004f3f8e71e3480d68d6b428e148383116e5e15", "_blank")}
+            className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-3 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg border-4 border-black shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
             BUY $TISM
           </Button>
         </div>
@@ -227,8 +230,16 @@ export default function FrostWebsite() {
               {[
                 { icon: "/x-icon-updated.png", alt: "X (Twitter)", link: "https://x.com/Tism_onBase" },
                 { icon: "/telegram-icon-updated.png", alt: "Telegram", link: "https://t.me/tismonbase" },
-                { icon: "/owl-icon-updated.png", alt: "Owl Platform", link: "#" },
-                { icon: "/ape-icon-final.png", alt: "Ape Platform", link: "#" },
+                {
+                  icon: "/owl-icon-updated.png",
+                  alt: "DexScreener",
+                  link: "https://dexscreener.com/base/0x763083Abd8ec82836b34276c086C39dD247d4F20",
+                },
+                {
+                  icon: "/ape-icon-final.png",
+                  alt: "Ape Store",
+                  link: "https://ape.store/base/0x1004f3f8e71e3480d68d6b428e148383116e5e15",
+                },
               ].map((social, index) => (
                 <a
                   key={index}
@@ -618,8 +629,16 @@ export default function FrostWebsite() {
               {[
                 { icon: "/x-icon-updated.png", alt: "X (Twitter)", link: "https://x.com/Tism_onBase" },
                 { icon: "/telegram-icon-updated.png", alt: "Telegram", link: "https://t.me/tismonbase" },
-                { icon: "/owl-icon-updated.png", alt: "Owl Platform", link: "#" },
-                { icon: "/ape-icon-final.png", alt: "Ape Platform", link: "#" },
+                {
+                  icon: "/owl-icon-updated.png",
+                  alt: "DexScreener",
+                  link: "https://dexscreener.com/base/0x763083Abd8ec82836b34276c086C39dD247d4F20",
+                },
+                {
+                  icon: "/ape-icon-final.png",
+                  alt: "Ape Store",
+                  link: "https://ape.store/base/0x1004f3f8e71e3480d68d6b428e148383116e5e15",
+                },
               ].map((social, index) => (
                 <a
                   key={index}
@@ -639,7 +658,10 @@ export default function FrostWebsite() {
               ))}
             </div>
 
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-lg sm:text-xl border-4 border-black shadow-lg transform hover:scale-105 transition-all duration-300">
+            <Button
+              onClick={() => window.open("https://ape.store/base/0x1004f3f8e71e3480d68d6b428e148383116e5e15", "_blank")}
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-lg sm:text-xl border-4 border-black shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
               BUY $TISM
             </Button>
           </div>
