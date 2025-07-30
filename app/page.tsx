@@ -11,7 +11,7 @@ export default function FrostWebsite() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const contractAddress = "COMING SOON"
+  const contractAddress = "0x1004f3f8e71e3480d68d6b428e148383116e5e15"
 
   const observerRef = useRef<IntersectionObserver | null>(null)
 
