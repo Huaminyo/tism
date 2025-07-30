@@ -225,14 +225,17 @@ export default function FrostWebsite() {
 
             <div className="flex justify-center gap-2 sm:gap-4 mb-8 sm:mb-12">
               {[
-                { icon: "/x-icon-updated.png", alt: "X (Twitter)" },
-                { icon: "/telegram-icon-updated.png", alt: "Telegram" },
-                { icon: "/owl-icon-updated.png", alt: "Owl Platform" },
-                { icon: "/ape-icon-final.png", alt: "Ape Platform" },
+                { icon: "/x-icon-updated.png", alt: "X (Twitter)", link: "https://x.com/Tism_onBase" },
+                { icon: "/telegram-icon-updated.png", alt: "Telegram", link: "https://t.me/tismonbase" },
+                { icon: "/owl-icon-updated.png", alt: "Owl Platform", link: "#" },
+                { icon: "/ape-icon-final.png", alt: "Ape Platform", link: "#" },
               ].map((social, index) => (
-                <div
+                <a
                   key={index}
-                  className="w-12 h-12 sm:w-16 sm:h-16 hover:scale-110 transition-all duration-300 cursor-pointer animate-bounce"
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 sm:w-16 sm:h-16 hover:scale-110 transition-all duration-300 cursor-pointer animate-bounce block"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <Image
@@ -242,7 +245,7 @@ export default function FrostWebsite() {
                     height={64}
                     className="w-full h-full object-contain drop-shadow-lg"
                   />
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -613,14 +616,17 @@ export default function FrostWebsite() {
 
             <div className="flex gap-3 sm:gap-4">
               {[
-                { icon: "/x-icon-updated.png", alt: "X (Twitter)" },
-                { icon: "/telegram-icon-updated.png", alt: "Telegram" },
-                { icon: "/owl-icon-updated.png", alt: "Owl Platform" },
-                { icon: "/ape-icon-final.png", alt: "Ape Platform" },
+                { icon: "/x-icon-updated.png", alt: "X (Twitter)", link: "https://x.com/Tism_onBase" },
+                { icon: "/telegram-icon-updated.png", alt: "Telegram", link: "https://t.me/tismonbase" },
+                { icon: "/owl-icon-updated.png", alt: "Owl Platform", link: "#" },
+                { icon: "/ape-icon-final.png", alt: "Ape Platform", link: "#" },
               ].map((social, index) => (
-                <div
+                <a
                   key={index}
-                  className="w-12 h-12 sm:w-14 sm:h-14 hover:scale-110 transition-all duration-300 cursor-pointer"
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 sm:w-14 sm:h-14 hover:scale-110 transition-all duration-300 cursor-pointer block"
                 >
                   <Image
                     src={social.icon || "/placeholder.svg"}
@@ -629,7 +635,7 @@ export default function FrostWebsite() {
                     height={56}
                     className="w-full h-full object-contain drop-shadow-lg"
                   />
-                </div>
+                </a>
               ))}
             </div>
 
