@@ -228,7 +228,7 @@ export default function FrostWebsite() {
                 { icon: "/x-icon-updated.png", alt: "X (Twitter)" },
                 { icon: "/telegram-icon-updated.png", alt: "Telegram" },
                 { icon: "/owl-icon-updated.png", alt: "Owl Platform" },
-                { icon: "/ape-icon-updated.png", alt: "Ape Platform" },
+                { icon: "/ape-icon-final.png", alt: "Ape Platform" },
               ].map((social, index) => (
                 <div
                   key={index}
@@ -616,7 +616,7 @@ export default function FrostWebsite() {
                 { icon: "/x-icon-updated.png", alt: "X (Twitter)" },
                 { icon: "/telegram-icon-updated.png", alt: "Telegram" },
                 { icon: "/owl-icon-updated.png", alt: "Owl Platform" },
-                { icon: "/ape-icon-updated.png", alt: "Ape Platform" },
+                { icon: "/ape-icon-final.png", alt: "Ape Platform" },
               ].map((social, index) => (
                 <div
                   key={index}
